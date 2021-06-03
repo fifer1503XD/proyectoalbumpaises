@@ -3,7 +3,7 @@ import React,{useContext} from 'react';
 import { useHistory } from "react-router";
 export const AlbumActions = ()=>{
     const history = useHistory()
-    const { setpaisActive } = useContext(AlbumContext);
+    const {paisActive, setpaisActive,categoriaActive, setcategoriaActive} = useContext(AlbumContext);
 
 const SetPais = (id) =>{
 
@@ -11,6 +11,12 @@ const SetPais = (id) =>{
     alert(id)
     history.push("/categorias");
 }
+const SetCategoria = (id) =>{
+    console.log(id)
+    setcategoriaActive(id)
+    alert(categoriaActive,"categoria activate")
+    history.push("/publicaciones");
+}
 
-return [SetPais]
+return [SetPais, SetCategoria]
 }

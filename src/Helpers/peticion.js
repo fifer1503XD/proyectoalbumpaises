@@ -9,3 +9,9 @@ export const getCategorias = async () => {
   let results = await response.json();
   return (results)
 }
+
+export const getPublicaciones = async () => {
+  let response = await fetch(`https://albumsanagustin.herokuapp.com/publicaciones/`)
+  let results = await response.json();
+  return (results)
+}

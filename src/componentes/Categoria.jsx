@@ -1,12 +1,13 @@
 
+import { AlbumActions } from "../Helpers/actions"
 import "./pais.css"
 const Categoria = ({Categoria}) => {
-  
-let {id,name, image,pais_id}= Categoria
+  const [,SetCategoria]= AlbumActions()
+let {id,name,image,pais_id}= Categoria
    let className = "pais"
     return ( 
       
-      <div className={className}>
+      <div  onClick={()=>{SetCategoria(id)}} className={className}>
           <div className="tituloalbum">{name}</div>
           <img  className="imgPais" src={image}/>
         </div>
