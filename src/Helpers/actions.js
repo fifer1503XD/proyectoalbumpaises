@@ -1,9 +1,10 @@
 import { AlbumContext } from "../hooks/useContext";
 import React,{useContext} from 'react';
 import { useHistory } from "react-router";
+import { getPublicacion } from "./peticion";
 export const AlbumActions = ()=>{
     const history = useHistory()
-    const {paisActive, setpaisActive,categoriaActive, setcategoriaActive} = useContext(AlbumContext);
+    const {paisActive, setpaisActive,categoriaActive, setcategoriaActive,publicacionActive, setpublicacionActive,setdetailPublicacion} = useContext(AlbumContext);
 
 const SetPais = (id) =>{
 
@@ -18,5 +19,11 @@ const SetCategoria = (id) =>{
     history.push("/publicaciones");
 }
 
-return [SetPais, SetCategoria]
+const showDetailPulicacion = (id) =>{
+    setpublicacionActive(id)
+    setdetailPublicacion(getPublicacion(id))
+    history.push("/publicacion");
+}
+
+return [SetPais, SetCategoria,showDetailPulicacion]
 }
