@@ -8,7 +8,7 @@ let {id,name,image,pais_id}= Categoria
     return ( 
       
       <div  onClick={()=>{SetCategoria(id)}} className={className}>
-          <div className="tituloalbum">{name}</div>
+          <div className="tituloalbum">{name ?  name.toUpperCase() : null}</div>
           <img  className="imgPais" src={image}/>
         </div>
    

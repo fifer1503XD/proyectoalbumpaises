@@ -9,7 +9,7 @@ let {id,name, image,categoria_id, url_video,texto,autor}= Publicacion
     return ( 
       
       <div onClick={()=>{showDetailPulicacion(id)}} className={className}>
-          <div className="tituloalbum">{name}</div>
+          <div className="tituloalbum">{name ? name.toUpperCase() : null}</div>
           <img  className="imgPais" src={image}/>
           <div className="tituloalbum">{autor}</div>
         </div>

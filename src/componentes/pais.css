@@ -6,7 +6,42 @@ body{
     width: 100%;
     height: 100%;
     }
-
+.video{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 60%;
+    height: 70vh;
+}
+.detailPublicacion{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tituloDetailPublicacion{
+    width: 100%;
+    background-color: brown;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 5%;
+}
+.textoPublicacion{
+    font-size: 1.5rem;
+    color: black;
+}
+.card  {
+    width: 30%;
+    background-color: rgb(6, 148, 94);
+    border-radius: 15px;
+    box-shadow: black;
+    padding: 2%;
+}
+.imgPublicacion{
+    margin: auto 0;
+    width: 80%;
+    height: 80%;
+}
 .imgPais:hover {filter: opacity(1);
 border-radius: 15px;
 box-shadow: 9px 9px 2px 1px rgb(183 34 34);}
@@ -14,9 +49,16 @@ box-shadow: 9px 9px 2px 1px rgb(183 34 34);}
 .pais{
     height: 30%;
     margin: 2%;
-    width: 29%;
+    width: 20%;
    
 }
+.pais2{
+    height: 30%;
+    margin: 2%;
+    width: 28%;
+   
+}
+
 .paisizq{
     
     height: 30%;

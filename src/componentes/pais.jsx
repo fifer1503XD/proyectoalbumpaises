@@ -3,7 +3,7 @@ import {AlbumActions} from '../Helpers/actions'
 const Pais = ({pais}) => {
   const [SetPais]= AlbumActions()
 let {id,name, image}=pais
-   let className = "pais"
+   let className = "pais2"
     if (id == 4){
      className =" paisizq"
     }

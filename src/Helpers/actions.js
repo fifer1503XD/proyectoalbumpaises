@@ -9,13 +9,11 @@ export const AlbumActions = ()=>{
 const SetPais = (id) =>{
 
     setpaisActive(id)
-    alert(id)
     history.push("/categorias");
 }
 const SetCategoria = (id) =>{
     console.log(id)
     setcategoriaActive(id)
-    alert(categoriaActive,"categoria activate")
     history.push("/publicaciones");
 }
 
