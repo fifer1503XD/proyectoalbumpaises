@@ -10,7 +10,7 @@ body{
     margin-top: auto;
     margin-bottom: auto;
     width: 60%;
-    height: 70vh;
+    height: 70%;
 }
 .detailPublicacion{
     display: flex;
@@ -76,5 +76,10 @@ box-shadow: 9px 9px 2px 1px rgb(183 34 34);}
     text-align: center;    
 }
 
-
+iframe{
+    width: 50vw;
+    height: 60vh;
+    /*Sólo para que se vea, ya que la dirección al parecer está mal*/
+    border: 5px solid green;
+  }
 
